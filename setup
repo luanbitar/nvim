@@ -1,0 +1,11 @@
+
+
+// create symbolic link to alacritty
+cd ~/.config/
+mv alacritty nvim/alacritty
+ln -s nvim/alacritty alacritty
+
+// create symbolic link to byobu
+cd ~/
+mv .byobu/ .config/nvim/.byobu
+ln -s .config/nvim/.byobu .byobu
