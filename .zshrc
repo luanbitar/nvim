@@ -5,6 +5,11 @@ source $HOME/.bash_profile
 
 alias vim='nvim'
 alias ll='clear && tree -L 1 --dirsfirst -F -C --noreport'
+alias ga='git add .'
+alias gc='git commit'
+alias gs='git status -s'
+alias gf='git fetch --all'
+alias gl='git log --graph'
 chpwd() { clear; ll; }
 
 ZSH_THEME='avit'
