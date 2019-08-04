@@ -2,12 +2,14 @@
 
 git config --global core.editor "vim"
 
-// create symbolic link to alacritty
-cd ~/.config/
-mv alacritty nvim/alacritty
-ln -s nvim/alacritty alacritty
+// alacritty symbolic link
+rm -rf ~/.config/alacritty
+ln -s ~/.config/nvim/alacritty ~/.config/alacritty
 
-// create symbolic link to byobu
-cd ~/
-mv .byobu/ .config/nvim/.byobu
-ln -s .config/nvim/.byobu .byobu
+// byobu symbolic link
+rm -rf ~/.byobu
+ln -s ~/.config/nvim/.byobu ~/.byobu
+
+// zsh symbolic link
+rm -rf ~/.zshrc
+ln -s ~/.config/nvim/.zshrc ~/.zshrc
