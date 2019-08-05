@@ -1,4 +1,9 @@
 export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME='spaceship'
+plugins=(
+	git
+	zsh-autosuggestions
+)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_profile
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -12,12 +17,6 @@ alias gf='git fetch --all'
 alias gl='git log --graph'
 chpwd() { ll; }
 
-ZSH_THEME='spaceship'
-
-plugins=(
-	git
-	zsh-autosuggestions
-)
 
 SPACESHIP_PROMPT_ORDER=(
   dir           # Current directory section
@@ -56,6 +55,10 @@ SPACESHIP_DIR_TRUNC='1' # show only last directory
 SPACESHIP_GIT_SYMBOL="" # disable git prefix
 SPACESHIP_GIT_BRANCH_PREFIX="" # disable branch prefix too
 SPACESHIP_GIT_PREFIX=''
+SPACESHIP_GIT_BRANCH_COLOR="red"
+SPACESHIP_GIT_STATUS_PREFIX=" "
+SPACESHIP_GIT_STATUS_SUFFIX=""
+SPACESHIP_GIT_STATUS_COLOR="magenta"
 # HIDING VALUES
 SPACESHIP_DOCKER_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=false

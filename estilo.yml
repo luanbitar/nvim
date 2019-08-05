@@ -6,5 +6,10 @@ url: 'https://github.com/luanbitar/nvim'
 description: 'Piece of peace'
 colorschemes:
   - name: peace
-    background: 'dark'
     palette: peace
+    background: 'dark'
+airline:
+  - name: 'peace'
+    palette: 'peace'
+    style: 'peace'
+

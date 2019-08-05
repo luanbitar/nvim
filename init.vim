@@ -1,11 +1,9 @@
 call plug#begin()
-Plug 'dracula/vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'ap/vim-buftabline'
 Plug 'ap/vim-css-color'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -27,6 +25,7 @@ set mouse=a
 set undofile
 set undodir=~/.config/nvim/undodir
 set cursorline
+set termguicolors
 
 "scroll padding
 if !&scrolloff
@@ -63,6 +62,15 @@ nnoremap <leader>p :FZF<cr>
 nnoremap <leader>f /
 nnoremap <leader>F :Ag 
 
+"Plugins
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
-let g:airline#extensions#tabline#enabled = 1
+let g:PKG_NAME_airline = 1
+let g:airline_theme='peace'
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
+let g:airline_skip_empty_sections=1
+let g:airline_section_error=''
+let g:airline_section_warning=''
+let g:airline_section_x=''
+let g:airline_section_y=''
