@@ -1,0 +1,10 @@
+name: 'peace'
+version: '1.0.0'
+license: 'MIT'
+author: 'Luan Bitar <gh/luanbitar>'
+url: 'https://github.com/luanbitar/nvim'
+description: 'Piece of peace'
+colorschemes:
+  - name: peace
+    background: 'dark'
+    palette: peace

@@ -174,65 +174,39 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x282a36'
-    foreground: '0xf8f8f2'
+    background: '0x1d1f21'
+    foreground: '0xc5c8c6'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
-  #selection:
-  #  text: '0xeaeaea'
-  #  background: '0x404040'
-  # If the dim colors are not set, they will be calculated automatically based
   # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xff5555'
-    green:   '0x50fa7b'
-    yellow:  '0xf1fa8c'
-    blue:    '0xcaa9fa'
-    magenta: '0xff79c6'
-    cyan:    '0x8be9fd'
-    white:   '0xbfbfbf'
+    black:   '0x1d1f21'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xc5c8c6'
 
+    #normal:
+    #  black:   '#1d1f21'
+    #  red:     '#cc6666'
+    #  green:   '#b5bd68'
+    #  yellow:  '#f0c674'
+    #  blue:    '#81a2be'
+    #  magenta: '#b294bb'
+    #  cyan:    '#8abeb7'
+    #  white:   '#c5c8c6'
   # Bright colors
   bright:
-    black:   '0x575b70'
-    red:     '0xff6e67'
-    green:   '0x5af78e'
-    yellow:  '0xf4f99d'
-    blue:    '0xcaa9fa'
-    magenta: '0xff92d0'
-    cyan:    '0x9aedfe'
-    white:   '0xe6e6e6'
-  # on the `normal` colors.
-  #dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
+    black:   '0x969896'
+    red:     '0xcc6667'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xffffff'
 
   # Indexed Colors
   #
