@@ -1,10 +1,12 @@
-black: '#1D1F21'
-foreground: '#C5C8C6'
-red: '#CC6667'
-green: '#B5BD68'
-yellow: '#F0C674'
-blue: '#81A2BE'
-magenta: '#B294BB'
-cyan: '#8ABEB7'
-grey: '#969896'
-white: '#FFF'
+black: '#1D1F21' # #1D1F21
+foreground: '#C5C8C6' # #C5C8C6
+red: '#CC6567' # #CC6567
+currentLine: '#232629' # #6C5563
+green: '#B5BD68' # #B5BD68
+yellow: '#F0C674' # #F0C674
+blue: '#3264a8' # #3264a8
+magenta: '#B294BB' # #B294BB
+cyan: '#79d1c5' # #79d1c5
+grey: '#969896' # #969896
+white: '#FFFFFF' # #FFFFFF
+debug: '#38FF38' # #38FF38

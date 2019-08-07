@@ -4,43 +4,43 @@
 " URL:https://github.com/luanbitar/nvim
 " Author: Luan Bitar &lt;gh/luanbitar&gt;
 " License: MIT
-" Last Change: 2019/08/05 16:38
+" Last Change: 2019/08/07 14:42
 " ============================================================
 
 let g:airline#themes#peace#palette = {}
 
-let s:normal1 = [ "#FFF", "#81A2BE", 15, 109 ]
-let s:normal2 = [ "#81A2BE", "#1D1F21", 109, 234 ]
-let s:normal3 = [ "#FFF", "#1D1F21", 15, 234 ]
+let s:normal1 = [ "#FFFFFF", "#3264a8", 15, 61 ]
+let s:normal2 = [ "#3264a8", "#1D1F21", 61, 234 ]
+let s:normal3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 let g:airline#themes#peace#palette.normal = airline#themes#generate_color_map(s:normal1, s:normal2, s:normal3)
 
-let s:insert1 = [ "#FFF", "#CC6667", 15, 167 ]
-let s:insert2 = [ "#CC6667", "#1D1F21", 167, 234 ]
-let s:insert3 = [ "#FFF", "#1D1F21", 15, 234 ]
+let s:insert1 = [ "#FFFFFF", "#CC6567", 15, 167 ]
+let s:insert2 = [ "#CC6567", "#1D1F21", 167, 234 ]
+let s:insert3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 let g:airline#themes#peace#palette.insert = airline#themes#generate_color_map(s:insert1, s:insert2, s:insert3)
 
-let s:replace1 = [ "#FFF", "#B294BB", 15, 139 ]
+let s:replace1 = [ "#FFFFFF", "#B294BB", 15, 139 ]
 let s:replace2 = [ "#B294BB", "#1D1F21", 139, 234 ]
-let s:replace3 = [ "#FFF", "#1D1F21", 15, 234 ]
+let s:replace3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 let g:airline#themes#peace#palette.replace = airline#themes#generate_color_map(s:replace1, s:replace2, s:replace3)
 
-let s:visual1 = [ "#FFF", "#8ABEB7", 15, 109 ]
-let s:visual2 = [ "#8ABEB7", "#1D1F21", 109, 234 ]
-let s:visual3 = [ "#FFF", "#1D1F21", 15, 234 ]
+let s:visual1 = [ "#FFFFFF", "#79d1c5", 15, 116 ]
+let s:visual2 = [ "#79d1c5", "#1D1F21", 116, 234 ]
+let s:visual3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 let g:airline#themes#peace#palette.visual = airline#themes#generate_color_map(s:visual1, s:visual2, s:visual3)
 
-let s:inactive1 = [ "#FFF", "#F0C674", 15, 222 ]
+let s:inactive1 = [ "#FFFFFF", "#F0C674", 15, 222 ]
 let s:inactive2 = [ "#F0C674", "#1D1F21", 222, 234 ]
-let s:inactive3 = [ "#FFF", "#1D1F21", 15, 234 ]
+let s:inactive3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 let g:airline#themes#peace#palette.inactive = airline#themes#generate_color_map(s:inactive1, s:inactive2, s:inactive3)
 
 if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
 
-let s:CP1 = [ "#FFF", "#CC6667", 15, 167 ]
-let s:CP2 = [ "#CC6667", "#1D1F21", 167, 234 ]
-let s:CP3 = [ "#FFF", "#1D1F21", 15, 234 ]
+let s:CP1 = [ "#FFFFFF", "#CC6567", 15, 167 ]
+let s:CP2 = [ "#CC6567", "#1D1F21", 167, 234 ]
+let s:CP3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 
 let g:airline#themes#peace#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
 

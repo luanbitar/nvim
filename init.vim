@@ -7,15 +7,17 @@ Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 colorscheme peace
+syntax enable
 
 set hidden
 set number
 "set relativenumber
-set list
-set listchars=tab:¬\|,trail:·
+"set list
+"set listchars=tab:¬\|,trail:·
 set ruler
 set tabstop=2
 set shiftwidth=2
@@ -50,7 +52,7 @@ vnoremap <silent>˚ :m '<-2<CR>gv=gv
 nnoremap <leader>z :set wrap!<CR>
 
 "Toggle NERDTree
-nnoremap <leader>b :NERDTreeToggle<CR>
+nnoremap <leader>b :NERDTreeToggle<cr>
 
 "Buffer maps ctrl+L to next, ctrl+h to prev and alt+w to close
 nnoremap <C-l> :bn<cr>
@@ -66,11 +68,18 @@ nnoremap <leader>F :Ag
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:PKG_NAME_airline = 1
+let g:webdevicons_enable_airline_statusline = 0
+"airline
 let g:airline_theme='peace'
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 let g:airline_skip_empty_sections=1
 let g:airline_section_error=''
 let g:airline_section_warning=''
+let g:airline_section_b=' Beba água'
+let g:airline_section_c=airline#section#create(['path'])
 let g:airline_section_x=''
 let g:airline_section_y=''
+let g:airline_section_z=airline#section#create(['%3v'])
+let g:airline_left_sep="\uE0C4"
+let g:airline_right_sep="\uE0C7"
