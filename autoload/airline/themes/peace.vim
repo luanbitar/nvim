@@ -4,18 +4,18 @@
 " URL:https://github.com/luanbitar/nvim
 " Author: Luan Bitar &lt;gh/luanbitar&gt;
 " License: MIT
-" Last Change: 2019/08/07 14:42
+" Last Change: 2019/08/08 13:50
 " ============================================================
 
 let g:airline#themes#peace#palette = {}
 
-let s:normal1 = [ "#FFFFFF", "#3264a8", 15, 61 ]
-let s:normal2 = [ "#3264a8", "#1D1F21", 61, 234 ]
+let s:normal1 = [ "#FFFFFF", "#CC6567", 15, 167 ]
+let s:normal2 = [ "#CC6567", "#1D1F21", 167, 234 ]
 let s:normal3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 let g:airline#themes#peace#palette.normal = airline#themes#generate_color_map(s:normal1, s:normal2, s:normal3)
 
-let s:insert1 = [ "#FFFFFF", "#CC6567", 15, 167 ]
-let s:insert2 = [ "#CC6567", "#1D1F21", 167, 234 ]
+let s:insert1 = [ "#FFFFFF", "#3264a8", 15, 61 ]
+let s:insert2 = [ "#3264a8", "#1D1F21", 61, 234 ]
 let s:insert3 = [ "#FFFFFF", "#1D1F21", 15, 234 ]
 let g:airline#themes#peace#palette.insert = airline#themes#generate_color_map(s:insert1, s:insert2, s:insert3)
 
