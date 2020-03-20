@@ -1,4 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export PATH="$PATH:$HOME/Applications/flutter/bin"
 ZSH_THEME='spaceship'
 plugins=(
 	git
@@ -15,6 +17,7 @@ alias gc='ga && git commit'
 alias gs='git status -s'
 alias gf='git fetch --all'
 alias gl='git log --graph'
+alias last-tag='last-tag = describe --abbrev=0 --tags'
 chpwd() { ll; }
 
 
@@ -46,19 +49,32 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 # CHAR
-SPACESHIP_CHAR_SYMBOL=" ⚛︎"
-SPACESHIP_CHAR_COLOR_SUCCESS="cyan"
+SPACESHIP_CHAR_SYMBOL='⚛︎ '
+SPACESHIP_CHAR_COLOR_SUCCESS='cyan'
 # DIR
 SPACESHIP_DIR_PREFIX='' # disable directory prefix, cause it's not the first section
 SPACESHIP_DIR_TRUNC='1' # show only last directory
 # GIT
-SPACESHIP_GIT_SYMBOL="" # disable git prefix
-SPACESHIP_GIT_BRANCH_PREFIX="" # disable branch prefix too
+SPACESHIP_GIT_SYMBOL='' # disable git prefix
+SPACESHIP_GIT_BRANCH_PREFIX='' # disable branch prefix too
 SPACESHIP_GIT_PREFIX=''
-SPACESHIP_GIT_BRANCH_COLOR="red"
-SPACESHIP_GIT_STATUS_PREFIX=" "
-SPACESHIP_GIT_STATUS_SUFFIX=""
-SPACESHIP_GIT_STATUS_COLOR="magenta"
+SPACESHIP_GIT_BRANCH_COLOR='red'
+SPACESHIP_GIT_STATUS_PREFIX=' '
+SPACESHIP_GIT_STATUS_SUFFIX=''
+SPACESHIP_GIT_STATUS_COLOR='magenta'
+# NODE
+SPACESHIP_NODE_PREFIX=''
 # HIDING VALUES
 SPACESHIP_DOCKER_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=false
+SPACESHIP_PACKAGE_SHOW=false
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/lbitar/.nvm/versions/node/v10.16.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/lbitar/.nvm/versions/node/v10.16.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/lbitar/.nvm/versions/node/v10.16.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/lbitar/.nvm/versions/node/v10.16.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/lbitar/.nvm/versions/node/v10.16.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/lbitar/.nvm/versions/node/v10.16.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh

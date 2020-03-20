@@ -6,6 +6,7 @@ Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-tern', {'do':'npm install'}
 Plug 'Shougo/neco-vim'
 Plug 'ncm2/ncm2-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', {'dir':'~/.fzf','do':'./install --all'}
@@ -17,6 +18,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mattn/emmet-vim', {'for':['javascript','html','css']}
 Plug 'roman/golden-ratio'
+Plug 'iloginow/vim-stylus'
 call plug#end()
 
 colorscheme peace
@@ -24,9 +26,9 @@ syntax enable
 
 set hidden
 set number
-"set relativenumber
-"set list
-"set listchars=tab:¬\|,trail:·
+set relativenumber
+set list
+set listchars=tab:\|_,trail:·
 set ruler
 set tabstop=2
 set shiftwidth=2
@@ -37,17 +39,14 @@ set undofile
 set undodir=~/.config/nvim/undodir
 set cursorline
 set termguicolors
-
-"scroll padding
-if !&scrolloff
-	set scrolloff=5
-endif
+set scrolloff=5
 set nowrap
 
 "Set leader and vim maps
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>er :!estilo render<cr><cr>
 
 "Adding alt+k to move line up / alt+j down"
 nnoremap <silent>∆ :m .+1<CR>==
@@ -62,6 +61,7 @@ nnoremap <leader>z :set wrap!<CR>
 
 "Toggle NERDTree
 nnoremap <leader>b :NERDTreeToggle<cr>
+nnoremap <leader>B :NERDTreeFind<cr>
 
 "Buffer maps ctrl+L to next, ctrl+h to prev and alt+w to close
 nnoremap <leader>l :bn<cr>
@@ -97,8 +97,8 @@ let g:airline_section_b=' Beba água'
 let g:airline_section_c=airline#section#create(['path'])
 let g:airline_section_x=''
 let g:airline_section_y=''
-let g:airline_section_z=airline#section#create(['%3v'])
-let g:airline_left_sep="\uE0C8"
-let g:airline_right_sep="\uE0CA"
+let g:airline_section_z=airline#section#create(['=]', '%3v'])
+let g:airline_left_sep="\uE0C0"
+let g:airline_right_sep="\uE0B2"
 "emmet
 let g:user_emmet_settings = {'javascript':{'extends':'jsx','attribute_name':{'class':'className'}}}

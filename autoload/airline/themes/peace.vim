@@ -4,7 +4,7 @@
 " URL:https://github.com/luanbitar/nvim
 " Author: Luan Bitar &lt;gh/luanbitar&gt;
 " License: MIT
-" Last Change: 2019/08/08 13:50
+" Last Change: 2019/08/14 15:15
 " ============================================================
 
 let g:airline#themes#peace#palette = {}

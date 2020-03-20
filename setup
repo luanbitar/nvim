@@ -13,3 +13,8 @@ ln -s ~/.config/nvim/.byobu ~/.byobu
 // zsh symbolic link
 rm -rf ~/.zshrc
 ln -s ~/.config/nvim/.zshrc ~/.zshrc
+
+//byobu sessions
+./persist.sh save
+// enter in byobu first
+./persist.sh restore

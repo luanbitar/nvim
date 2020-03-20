@@ -4,7 +4,7 @@
 " URL: https://github.com/luanbitar/nvim
 " Author: Luan Bitar &lt;gh/luanbitar&gt;
 " License: MIT
-" Last Change: 2019/08/08 13:50
+" Last Change: 2019/08/14 15:15
 " ===============================================================
 
 set background=dark
@@ -39,23 +39,23 @@ hi DiffChange guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=N
 hi DiffDelete guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi DiffText guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi ErrorMsg guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi VertSplit guifg=#79d1c5 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi VertSplit guifg=#232629 ctermfg=235 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Folded guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi FoldColumn guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SignColumn guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi IncSearch guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi LineNr guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi IncSearch guifg=NONE ctermfg=NONE guibg=#F0C674 ctermbg=222 gui=NONE cterm=NONE
+hi LineNr guifg=#F0C674 ctermfg=222 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi ModeMsg guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MoreMsg guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi NonText guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Normal guifg=#79d1c5 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi NonText guifg=#292d30 ctermfg=236 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Normal guifg=#FFFFFF ctermfg=15 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PMenu guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PMenuSel guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PmenuSbar guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PmenuThumb guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Question guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Search guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Search guifg=NONE ctermfg=NONE guibg=#F0C674 ctermbg=222 gui=NONE cterm=NONE
 hi SpecialKey guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellBad guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellLocal guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -66,33 +66,33 @@ hi StatusLineNC guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm
 hi TabLine guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLineFill guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TabLineSel guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Title guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Visual guifg=#1D1F21 ctermfg=234 guibg=#CC6567 ctermbg=167 gui=NONE cterm=NONE
+hi Title guifg=#79d1c5 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Visual guifg=NONE ctermfg=NONE guibg=#6C5563 ctermbg=241 gui=NONE cterm=NONE
 hi VisualNOS guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WarningMsg guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Comment guifg=#969896 ctermfg=246 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Constant guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi String guifg=#3264a8 ctermfg=61 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Constant guifg=#3264a8 ctermfg=61 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi String guifg=#F0C674 ctermfg=222 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Character guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Boolean guifg=#B294BB ctermfg=139 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Boolean guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Number guifg=#B294BB ctermfg=139 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Float guifg=#B294BB ctermfg=139 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Function guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Statement guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Conditional guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Function guifg=#79d1c5 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Statement guifg=#B294BB ctermfg=139 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Conditional guifg=#79d1c5 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Repeat guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Label guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Operator guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Operator guifg=#79d1c5 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Keyword guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Exception guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PreProc guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Include guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Include guifg=#3264a8 ctermfg=61 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Define guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Macro guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PreCondit guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Type guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Type guifg=#f0b274 ctermfg=216 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi StorageClass guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Structure guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Typedef guifg=#CC6567 ctermfg=167 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
