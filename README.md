@@ -1,5 +1,3 @@
-## Install
-
 ## Objective
 
 Pre install packages:
