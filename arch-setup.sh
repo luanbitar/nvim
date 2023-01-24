@@ -55,5 +55,5 @@ if ! [ -x "$(command -v asdf)" ]; then
     asdf install nodejs latest
     echo "asdf installed successfully" >&2
 else
-    echo "yay already installed, skipped" >&2
+    echo "asdf already installed, skipped" >&2
 fi
