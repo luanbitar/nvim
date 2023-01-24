@@ -1,5 +1,5 @@
 ### For Arch Linux base setup:
 
 ```bash
-sh arch.setup
+wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/arch-setup.sh | bash
 ```
