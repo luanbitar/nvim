@@ -42,7 +42,7 @@ else
 fi
 
 # common apps
-yay -S --noconfirm google-chrome notion-app 1password
+yay -S --noconfirm google-chrome notion-app 1password whatsapp-nativefier zoom
 
 # dev apps
 yay -S --noconfirm visual-studio-code-bin alacritty
@@ -57,3 +57,15 @@ if ! [ -x "$(command -v asdf)" ]; then
 else
     echo "asdf already installed, skipped" >&2
 fi
+
+# snap
+if ! [ -x "$(command -v snap)" ]; then
+    yay -S --noconfirm snapd
+    systemctl enable --now snapd.service
+    echo "snap installed successfully" >&2
+else
+    echo "snap already installed, skipped" >&2
+fi
+
+# installing snap packages
+snap install spotify

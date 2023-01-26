@@ -12,8 +12,16 @@ Pre install packages:
 - notion
 - 1password
 
-### For Arch Linux base setup:
+### For Arch Linux:
+
+Initial setup:
 
 ```bash
 wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/arch-setup.sh | bash
+```
+
+Updating packages:
+
+```bash
+wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/arch-update.sh | bash
 ```
