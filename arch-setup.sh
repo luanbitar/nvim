@@ -45,7 +45,7 @@ fi
 yay -S --noconfirm google-chrome notion-app 1password whatsapp-nativefier zoom
 
 # dev apps
-yay -S --noconfirm visual-studio-code-bin alacritty
+yay -S --noconfirm visual-studio-code-bin alacritty neovim
 
 # asdf
 if ! [ -x "$(command -v asdf)" ]; then
@@ -69,3 +69,21 @@ fi
 
 # installing snap packages
 snap install spotify
+
+# allacritty theme
+if ! [ -d "$HOME/.alacritty-colorscheme" ]; then
+    git clone https://github.com/eendroroy/alacritty-theme.git ~/.alacritty-colorscheme
+    echo 'import:' >> ~/.alacritty.yaml
+    echo '  - ~/.alacritty-colorscheme/themes/gruvbox_material.yaml' >> ~/.alacritty.yml
+    echo "allacritty theme installed" >&2
+else
+   echo "allacritty theme already installed, skipped" >&2
+fi
+
+# nvim config
+if ! [ -d "$HOME/.config/nvim" ]; then
+    git clone https://github.com/luanbitar/nvim.git ~/.config/nvim
+    echo "nvim config theme installed" >&2
+else
+   echo "nvim config theme already installed, skipped" >&2
+fi
