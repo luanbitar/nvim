@@ -42,7 +42,7 @@ else
 fi
 
 # common apps
-yay -S --noconfirm google-chrome notion-app 1password whatsapp-nativefier zoom
+yay -S --noconfirm google-chrome notion-app 1password whatsapp-nativefier zoom slack-desktop
 
 # dev apps
 yay -S --noconfirm visual-studio-code-bin alacritty neovim
