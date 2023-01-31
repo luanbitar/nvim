@@ -45,3 +45,22 @@ else
    echo "p10k already installed, skipped" >&2
 fi
 
+# nvim config
+if ! [ -d "$HOME/.config/nvim" ]; then
+  git clone https://github.com/luanbitar/nvim.git ~/.config/nvim
+  echo "nvim config theme installed" >&2
+else
+  echo "nvim config theme already installed, skipped" >&2
+fi
+
+# asdf
+if ! [ -x "$(command -v asdf)" ]; then
+  brew install asdf
+  echo ". $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+  asdf plugin add nodejs
+  asdf install nodejs latest
+  asdf global nodejs latest
+  echo "asdf installed successfully" >&2
+else
+  echo "asdf already installed, skipped" >&2
+fi
