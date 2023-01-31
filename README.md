@@ -3,10 +3,13 @@
 Pre install packages:
 
 - git
-- yay (for arch linux)
-- snap (for arch linux)
-- pw10k
+- yay (arch)
+- snap (arch)
+- homebrew (mac)
+- p10k
 - alacritty
+- iterm2 (mac)
+- neovim
 - asdf
 - vscode
 - chrome
@@ -14,6 +17,7 @@ Pre install packages:
 - 1password
 - whatsapp
 - spotify
+- zoom
 
 ### For Arch Linux:
 
