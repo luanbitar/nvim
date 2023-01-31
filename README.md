@@ -27,13 +27,13 @@ Installation with [Anarchy Installer](https://anarchyinstaller.gitlab.io/) using
 Initial setup:
 
 ```bash
-wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/arch-setup.sh | bash
+wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/scripts/arch-setup.sh | bash
 ```
 
 Updating packages:
 
 ```bash
-wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/arch-update.sh | bash
+wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/scripts/arch-update.sh | bash
 ```
 
 ### For MacOS:
@@ -41,11 +41,11 @@ wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/arch-update.sh |
 Initial setup:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/luanbitar/nvim/main/mac-setup.sh | bash
+curl -o- https://raw.githubusercontent.com/luanbitar/nvim/main/scripts/mac-setup.sh | bash
 ```
 
 Updating packages:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/luanbitar/nvim/main/mac-update.sh | bash
+curl -o- https://raw.githubusercontent.com/luanbitar/nvim/main/scripts/mac-update.sh | bash
 ```
