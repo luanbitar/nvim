@@ -1,5 +1,6 @@
 import:
-  - ~/.config/nvim/themes/gruvbox-material.yaml
+ - ~/.config/alacritty/themes/themes/gruvbox_material.yaml
 font:
   normal:
     family: MesloLGS NF
+  size: 16.0
