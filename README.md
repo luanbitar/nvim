@@ -39,3 +39,9 @@ Initial setup:
 ```bash
 wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/mac-setup.sh | bash
 ```
+
+Updating packages:
+
+```bash
+wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/mac-update.sh | bash
+```
