@@ -31,3 +31,11 @@ Updating packages:
 ```bash
 wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/arch-update.sh | bash
 ```
+
+### For MacOS:
+
+Initial setup:
+
+```bash
+wget -O - https://raw.githubusercontent.com/luanbitar/nvim/main/mac-setup.sh | bash
+```
