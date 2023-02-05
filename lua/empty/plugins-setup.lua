@@ -25,10 +25,19 @@ if not status then
 end
 
 return packer.startup(function(use)
-  use("wbthomason/packer.nvim")
-  use("sainnhe/gruvbox-material")
+  use("wbthomason/packer.nvim") -- plugins manager
+  use("nvim-lua/plenary.nvim") -- lua functions to other plugins
+  use("sainnhe/gruvbox-material") -- theme
+
+  -- navigation plugins
   use("christoomey/vim-tmux-navigator") -- split and tmux navigator
-  use("szw/vim-maximizer")
+  use("szw/vim-maximizer") -- maximing an split
+
+  -- essential plugins
+  use("tpope/vim-surround") -- surrounding text shortcuts
+  use("vim-scripts/ReplaceWithRegister") -- replace sections with clipboard
+  use("numToStr/Comment.nvim") -- commenting plugin
+  use("nvim-tree/nvim-tree.lua") -- file explorer
 
   
   if packer_bootstrap then
