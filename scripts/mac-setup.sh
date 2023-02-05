@@ -2,6 +2,8 @@ clear
 
 HOME="/Users/"$(whoami)
 
+sudo -v
+
 # homebrew
 if ! [ -x "$(command -v brew)" ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -9,7 +11,7 @@ if ! [ -x "$(command -v brew)" ]; then
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zshrc"
   eval "$(/opt/homebrew/bin/brew shellenv)"
   brew install --cask visual-studio-code iterm2 google-chrome slack notion 1password spotify whatsapp zoom
-  brew install git neovim
+  brew install neovim
   echo "brew installed successfully" >&2
 else
   echo "brew already installed, skipped" >&2
