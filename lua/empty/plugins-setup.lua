@@ -38,6 +38,7 @@ return packer.startup(function(use)
   use("vim-scripts/ReplaceWithRegister") -- replace sections with clipboard
   use("numToStr/Comment.nvim") -- commenting plugin
   use("nvim-tree/nvim-tree.lua") -- file explorer
+  use("kyazdani42/nvim-web-devicons") -- file icons
 
   
   if packer_bootstrap then

@@ -19,6 +19,7 @@ opt.smartcase = true
 
 -- cursor line
 opt.cursorline = true
+opt.scrolloff = 8
 
 -- appearence
 opt.termguicolors = true
