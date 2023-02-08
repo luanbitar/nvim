@@ -1,7 +1,7 @@
-require("empty.plugins-setup")
-require("empty.core.options")
-require("empty.core.keymaps")
-require("empty.core.colorscheme")
+require("plugins-setup")
+require("core.options")
+require("core.keymaps")
+require("core.colorscheme")
 
-require("empty.plugins.comment")
-require("empty.plugins.nvim-tree")
+require("plugins.comment")
+require("plugins.nvim-tree")
