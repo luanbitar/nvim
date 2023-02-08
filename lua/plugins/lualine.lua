@@ -3,7 +3,7 @@ if not status then
   return;
 end
 
-local theme = require("lualine.themes.gruvbox-material")
+local theme = require "lualine.themes.gruvbox-material"
 
 theme.normal.a.bg = "#FFFFFF"
 
