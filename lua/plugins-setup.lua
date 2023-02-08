@@ -39,11 +39,16 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- commenting plugin
   use "nvim-tree/nvim-tree.lua" -- file explorer
   use "kyazdani42/nvim-web-devicons" -- file icons
-
-  -- statusline
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- telescope
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    requires = { {'nvim-lua/plenary.nvim'} }
   }
   
   if packer_bootstrap then
