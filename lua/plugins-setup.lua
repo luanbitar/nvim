@@ -40,6 +40,11 @@ return packer.startup(function(use)
   use("nvim-tree/nvim-tree.lua") -- file explorer
   use("kyazdani42/nvim-web-devicons") -- file icons
 
+  -- statusline
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   
   if packer_bootstrap then
     require("packer").sync()
