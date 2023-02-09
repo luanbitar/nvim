@@ -38,12 +38,13 @@ if ! [ -d "$HOME/.zsh" ]; then
   brew tap homebrew/cask-fonts
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
   brew install font-meslo-lg-nerd-font
-  echo 'source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
   echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
   echo 'HISTFILE=~/.zsh/.zsh_history' >> ~/.zshrc
   echo 'HISTSIZE=10000' >> ~/.zshrc
   echo 'SAVEHIST=10000' >> ~/.zshrc
   echo 'setopt appendhistory' >> ~/.zshrc
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+  echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
   echo "p10k installed successfully" >&2
 else
    echo "p10k already installed, skipped" >&2
