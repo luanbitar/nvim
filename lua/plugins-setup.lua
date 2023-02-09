@@ -60,7 +60,38 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip"
   use "saadparwaiz1/cmp_luasnip"
   use "rafamadriz/friendly-snippets"
-  
+
+  -- lsp
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig"
+  use "neovim/nvim-lspconfig"
+  use "hrsh7th/cmp-nvim-lsp"
+  use {"glepnir/lspsaga.nvim", branch = "main"}
+  use "jose-elias-alvarez/typescript.nvim"
+  use "onsails/lspkind.nvim"
+
+  -- formatting and linting
+  use "jose-elias-alvarez/null-ls.nvim"
+  use "jayp0521/mason-null-ls.nvim"
+
+  -- treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
+
+  -- auto closing
+  use "windwp/nvim-autopairs"
+  use "windwp/nvim-ts-autotag"
+
+  -- git signs
+  use "lewis6991/gitsigns.nvim"
+
+
+
   if packer_bootstrap then
     require("packer").sync()
   end
