@@ -24,10 +24,10 @@ if ! [ -x "$(command -v yay)" ]; then
   cd
 
   # common apps
-  yay -S --noconfirm google-chrome notion-app 1password whatsapp-nativefier zoom slack-desktop
+  yay -S --noconfirm google-chrome notion-app 1password whatsapp-nativefier zoom slack-desktop flipclock
 
   # dev apps
-  yay -S --noconfirm visual-studio-code-bin alacritty neovim
+  yay -S --noconfirm visual-studio-code-bin alacritty neovim ripgrep fd
   echo "yay installed successfully" >&2
 else
   echo "yay already installed, skipped" >&2
