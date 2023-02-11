@@ -6,8 +6,9 @@ local keymap = vim.keymap -- conciseness
 keymap.set("i", "jk", "<ESC>") -- exit to normal mode using jk
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear seach
 keymap.set("n", "x", '"_x') -- prevent to copy when using 'x' to delete
-keymap.set("n", "<leader>+", "<C-a>") -- increment integer
+keymap.set("n", "<leader>+", "<C-a>", { desc = "increment integer" }) -- increment integer
 keymap.set("n", "<leader>-", "<C-x>") -- decrement integer
+keymap.set("t", "<Esc>", "<C-\\><C-n>") -- adding esc behavior to terminal mode
 
 -- windows
 keymap.set("n", "<leader>sv", "<C-w>v") -- split vertically
@@ -34,3 +35,4 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 
+-- :tnoremap <Esc> <C-\><C-n>
