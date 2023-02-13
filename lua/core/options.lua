@@ -38,3 +38,8 @@ opt.splitbelow = true
 
 -- word config
 opt.iskeyword:append("-")
+opt.iskeyword:append("_")
+
+-- show whitespaces ⏎¬⇥
+opt.listchars = "tab:|  ,trail:~,extends:>,precedes:<,nbsp:·,lead:·,multispace:·"
+opt.list = true
