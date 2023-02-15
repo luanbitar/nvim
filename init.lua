@@ -1,18 +1,17 @@
-require "plugins-setup"
-require "core.options"
-require "core.keymaps"
-require "core.colorscheme"
+require("plugins-setup")
+require("core.options")
+require("core.keymaps")
+require("core.colorscheme")
 
-require "plugins.comment"
-require "plugins.nvim-tree"
-require "plugins.lualine"
-require "plugins.telescope"
-require "plugins.nvim-cmp"
-require "plugins.mason"
-require "plugins.lspsaga"
-require "plugins.lspconfig"
-require "plugins.lspnull"
-require "plugins.autopairs"
-require "plugins.treesitter"
-require "plugins.gitsigns"
-
+require("plugins.comment")
+require("plugins.nvim-tree")
+require("plugins.lualine")
+require("plugins.telescope")
+require("plugins.nvim-cmp")
+require("plugins.mason")
+require("plugins.lspconfig")
+require("plugins.lspnull")
+require("plugins.autopairs")
+require("plugins.treesitter")
+require("plugins.gitsigns")
+require("plugins.bufferline")

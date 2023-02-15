@@ -1,4 +1,9 @@
-local opt = vim.opt -- for conciseness
+-- for conciseness
+local opt = vim.opt
+local g = vim.g
+
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1
 
 -- line number
 opt.number = true

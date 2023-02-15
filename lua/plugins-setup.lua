@@ -27,7 +27,11 @@ end
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- plugins manager
 	use("nvim-lua/plenary.nvim") -- lua functions to other plugins
-	use("sainnhe/gruvbox-material") -- theme
+
+	-- themes
+	-- use("sainnhe/gruvbox-material")
+	-- use("navarasu/onedark.nvim")
+	use("AlexvZyl/nordic.nvim")
 
 	-- navigation plugins
 	use("christoomey/vim-tmux-navigator") -- split and tmux navigator
@@ -67,7 +71,6 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig")
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp")
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
 
@@ -90,6 +93,9 @@ return packer.startup(function(use)
 
 	-- git signs
 	use("lewis6991/gitsigns.nvim")
+
+	-- tab style
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
 	if packer_bootstrap then
 		require("packer").sync()
