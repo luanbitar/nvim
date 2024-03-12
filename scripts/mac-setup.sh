@@ -10,8 +10,8 @@ if ! [ -x "$(command -v brew)" ]; then
   echo '# Set PATH, MANPATH, etc., for Homebrew.' >> "$HOME/.zshrc"
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zshrc"
   eval "$(/opt/homebrew/bin/brew shellenv)"
-  brew install --cask visual-studio-code iterm2 google-chrome slack notion 1password spotify whatsapp zoom
-  brew install neovim fliqlo gh ripgrep wget fd tig
+  brew install --cask visual-studio-code iterm2 google-chrome slack notion 1password spotify whatsapp zoom raycast
+  brew install neovim fliqlo gh ripgrep wget fd tig koekeishiya/formulae/yabai
   echo "brew installed successfully" >&2
 else
   echo "brew already installed, skipped" >&2

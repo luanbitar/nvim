@@ -49,3 +49,9 @@ Updating packages:
 ```bash
 curl -o- https://raw.githubusercontent.com/luanbitar/nvim/main/scripts/mac-update.sh | bash
 ```
+
+Additional productivity apps:
+
+- [Alttab](https://alt-tab-macos.netlify.app/)
+- [Monitor Control](https://github.com/MonitorControl/MonitorControl)
+- [Intellidock](https://mightymac.app/intellidock/)
